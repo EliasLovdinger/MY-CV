@@ -1,0 +1,110 @@
+
+.myDiv {
+  background-color: rgb(255, 255, 255);
+  text-align:left;
+  margin-left: 25px;
+  }
+
+.myFlexContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center
+}
+.myFlexContainer> div {
+  display: flex;
+  margin: 10px;
+  }
+.topBorder {
+  border: 20px outset rgb(120, 255, 200)
+}
+
+.imgFrame {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  border: 10px outset rgb(120, 255, 200);
+}
+.responsive {
+  width: 50%;
+  max-width: 486px;
+  height: auto;
+  margin: 2px;
+}
+
+  a:hover{
+    opacity: 0.25;
+  }
+
+  .myFlexContainer2{
+    background-color: rgb(120, 255, 200);
+    display:flex;
+    flex-wrap: wrap;
+    border: 10px outset rgb(120, 255, 200)
+      
+}
+.myFlexContainer2> div {
+    background-color: #ffffff;
+    margin: auto;
+    width: 1000px;
+    max-width: 90%;
+    padding: 20px;
+    font-size:15px;
+  }
+
+  table , th , td{
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+  .wrapper {
+    display: flex;
+  }
+  
+  .wrapper a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    color: #4759ff;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .modal {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(77, 77, 77, .7);
+    transition: all .4s;
+  }
+  
+  .modal:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .modal_content {
+    border-radius: 4px;
+    position: relative;
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 1em 2em;
+  }
+  
+  .modal_close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #585858;
+    text-decoration: none;
+  }
