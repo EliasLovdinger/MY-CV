@@ -1,0 +1,35 @@
+[
+  {
+    "kurs": "Utveckling med C# och .NET (2021-09-06 -> 2021-10-15)"
+  },
+  {
+    "kurs": "Objektorienterad programmering (2021-10-18 -> 2021-12-17)"
+  },
+  {
+    "kurs": "Agil systemutveckling (2021-10-18 -> 2021-12-19)"
+  },
+  {
+    "kurs": "Databasutveckling och databasadministration (2022-01-10 -> 2022-02-11)"
+  },
+  {
+    "kurs": "Avancerad .NET (2022-02-14 -> 2022-04-08)"
+  },
+  {
+    "kurs": "Webbutveckling frontend (2022-04-11 -> 2022-05-01)"
+  },
+  {
+    "kurs": "Systemtestning"
+  },
+  {
+    "kurs": "Avancerad systemutveckling ASP .NET"
+  },
+  {
+    "kurs": "LIA 1 Grundläggande systemutveckling"
+  },
+  {
+    "kurs": "LIA 2 Avancerad systemutveckling"
+  },
+  {
+    "kurs": "Examensarbete"
+  }
+]

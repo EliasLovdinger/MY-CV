@@ -1,70 +1,77 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
     <title>Kontakt</title>
+    <link rel="Stylesheet" href="/css/style.css" />
+  </head>
 
-    <style>
-    </style>
-</head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><i class="fa-brands fa-wolf-pack-battalion"></i>Elias Lövdinger CV</a>
 
-<link rel="Stylesheet" href="/css/style.css">
+      <div class="fas fa-bars"></div>
 
-    <body style="font-family:sans-serif">
-        <header>
-            <div class="topBorder">
-                <div class="myFlexContainer">
-                    <div>
-                        <h1>Elias Lövdinger CV</h1>
-                    </div> 
-                </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="startsida.html">Startsida</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="kontakt.html">Kontakt*</a></li>
+            <li><a href="LoremIpsum.html">Lorem Ipsum</a></li>
+          </ul>
+        </nav>
+    </header>
 
-                <div class="myFlexContainer">
-                    <div>
-                        <a href="startsida.html">Startsida</a>
-                    </div>
+      <div class="topBorder">
+        <div class="myFlexContainer">
 
-                    <div>
-                        <a href="CV.html">CV</a>
-                    </div>
+        </div>
+      </div>
 
-                    <div>
-                        <a href="portfolio.html">Portfolio</a>
-                    </div>
-
-                    <div>
-                        <a href="kontakt.html">Kontakt*</a>
-                    </div>
-
-                    <div>
-                        <a href="LoremIpsum.html">Lorem Ipsum</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+      <div class="animals"></div>
 
     <div class="myDiv">
-        <h2>Kontakta mig</h2>
+      <h2>Kontakta mig</h2>
     </div>
     <div class="myFlexContainer2">
-        <div>
-            <form id="form" name="form" method="post" action=" ">
-                <fieldset style="width:40%;">
-                    <legend><b>Kontakta:</b></legend>
-                    <b>Namn:</b> <br>
-                    <input type="text" name="namn" id="namn" /> <br>
-                    <b>Email:</b> <br>
-                    <input type="text" name="email" id="email" /> <br>
-                    <b>Telefonnummer:</b> <br>
-                    <input type="text" name="telefonnr" id="telefonnr" /> <br>
-                    <b>Meddelande:</b> <br>
-                    <textarea name="meddelande" id="meddelande" cols="100%" rows="10%"></textarea> <br>
-                    <input type="submit" name="Send" id="Send" value="Send" />
-                </fieldset>
-            </form>
-        </div>
+      <div class="aboutme">
+        <form
+          id="form"
+          name="form"
+          method="post"
+          action="mailto:elias.lovdinger@edu.varberg.se"
+        >
+          <fieldset style="width: 40%">
+            <legend><b>Kontakta:</b></legend>
+            <br>
+            <b>Namn:</b> <br />
+            <input type="text" name="namn" id="namn" /> <br />
+            <b>Email:</b> <br />
+            <input type="text" name="email" id="email" /> <br />
+            <b>Telefonnummer:</b> <br />
+            <input type="text" name="telefonnr" id="telefonnr" /> <br />
+            <b>Meddelande:</b> <br />
+            <textarea
+              name="meddelande"
+              id="meddelande"
+              cols="100%"
+              rows="10%"
+            ></textarea>
+            <br />
+            <input type="submit" name="Send" id="Send" value="Send" />
+          </fieldset>
+        </form>
+      </div>
     </div>
 
-</body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="/scripts/main.js"></script>
+
+  </body>
 </html>

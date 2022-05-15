@@ -1,8 +1,82 @@
+*{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  text-decoration: none;
+}
+html{
+  font-size: 62.5%;
+}
+
+
+body{
+  overflow-x: hidden;
+}
+
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #444;
+}
+
+.header .logo{
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+}
+
+.header .logo i {
+  padding: 0 .5rem;
+}
+
+.header .navbar ul{
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header .navbar ul li{
+  margin: 0 1.5rem;
+
+}
+
+.header .navbar ul li a{
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+}
+
+.header .navbar ul li a:hover{
+  color: rgb(255, 0, 0);
+}
+
+.header .fa-bars{
+  color: rgb(255, 0, 0);
+  cursor: pointer;
+  font-size: 3rem;
+  display: none;
+}
 
 .myDiv {
-  background-color: rgb(255, 255, 255);
-  text-align:left;
-  margin-left: 25px;
+  padding-top: 8rem;
+  margin-left: 25rem;
+  }
+
+  .aboutme{
+    border: 2px outset #ff00009b;  
+  }
+  
+  .myFlexContainer h1{
+    color: rgb(255, 0, 0);
   }
 
 .myFlexContainer{
@@ -10,12 +84,16 @@
   flex-wrap: wrap;
   justify-content: center
 }
-.myFlexContainer> div {
+
+.myFlexContainer div {
   display: flex;
   margin: 10px;
   }
 .topBorder {
-  border: 20px outset rgb(120, 255, 200)
+  border: 10px outset yellow;
+  background: linear-gradient(rgb(240, 230, 210), yellow);
+  overflow: hidden;
+  height: 10rem;
 }
 
 .imgFrame {
@@ -24,8 +102,13 @@
   display: flex;
   flex-wrap: wrap;
   width: auto;
-  border: 10px outset rgb(120, 255, 200);
+  border: 2px outset #ff00009b;
 }
+
+.imgFrame img{
+  max-width: 47rem;
+}
+
 .responsive {
   width: 50%;
   max-width: 486px;
@@ -38,25 +121,22 @@
   }
 
   .myFlexContainer2{
-    background-color: rgb(120, 255, 200);
+    padding-top: 40px;
+    padding-bottom: 40px;
     display:flex;
     flex-wrap: wrap;
-    border: 10px outset rgb(120, 255, 200)
-      
+    border: 10px outset yellow;
+    background: linear-gradient(rgb(240, 230, 210), yellow);
 }
+
 .myFlexContainer2> div {
-    background-color: #ffffff;
+    background-color: #fff;
     margin: auto;
     width: 1000px;
     max-width: 90%;
     padding: 20px;
     font-size:15px;
   }
-
-  table , th , td{
-    border: 2px solid rgb(0, 0, 0);
-}
-
 
   .wrapper {
     display: flex;
@@ -68,7 +148,6 @@
     padding: 15px;
     background-color: #fff;
     border-radius: 3px;
-    color: #4759ff;
     font-family: 'Roboto', sans-serif;
   }
   
@@ -108,3 +187,75 @@
     color: #585858;
     text-decoration: none;
   }
+
+
+  .animals{
+    position: absolute;
+    left: 0;
+    height: 5rem;
+    width: 100%;
+    background: url(/images/Animals.jpg);
+    background-size: 100rem 5rem;
+    background-repeat: repeat-x;
+    animation: walking 15s linear infinite;
+    border: .2rem outset #ff00009b;
+  }
+
+  .aboutme table{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  table th ,td{
+    border: 2px solid rgb(0, 0, 0);
+    padding: .4rem;
+}
+
+
+  @keyframes walking{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100rem;
+    }
+}
+
+
+  @media(max-width:768px){
+    html{
+        font-size: 50%;
+    }
+    .header .fa-bars{
+        display: block;
+    }
+    .header .navbar{
+        position: fixed;
+        top: -120%;
+        left: 0;
+        height: auto;
+        width: 100%;
+        background-color: #fff;
+        z-index: 1000;
+        border-top: .1rem solid rgba(0, 0, 0, 3);
+    }
+    .header .navbar ul{
+        height: 100%;
+        width: 100%;
+        flex-flow: column;
+    }
+    .header .navbar ul li{
+        margin: 1rem 0;
+    }
+    .header .navbar ul li a{
+        color: #444;
+        font-size: 2.4rem;
+    }
+    .header .fa-times{
+        transform: rotate(180deg);
+    }
+    .header .nav-toggle{
+        top: 5.8rem;
+    }
+}

@@ -1,102 +1,113 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
     <title>portfolio</title>
+    <link rel="Stylesheet" href="/css/style.css" />
+  </head>
 
-    <style>
-    </style>
-</head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><i class="fa-brands fa-wolf-pack-battalion"></i>Elias Lövdinger CV</a>
 
-<link rel="Stylesheet" href="/css/style.css">
+      <div class="fas fa-bars"></div>
 
-    <body style="font-family:sans-serif">
-        <header>
-            <div class="topBorder">
-                <div class="myFlexContainer">
-                    <div>
-                        <h1>Elias Lövdinger CV</h1>
-                    </div> 
-                </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="startsida.html">Startsida</a></li>
+            <li><a href="CV.html">CV</a></li>
+            <li><a href="portfolio.html">Portfolio*</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+            <li><a href="LoremIpsum.html">Lorem Ipsum</a></li>
+          </ul>
+        </nav>
+    </header>
 
-                <div class="myFlexContainer">
-                    <div>
-                        <a href="startsida.html">Startsida</a>
-                    </div>
+      <div class="topBorder">
+        <div class="myFlexContainer">
 
-                    <div>
-                        <a href="CV.html">CV</a>
-                    </div>
+        </div>
+      </div>
 
-                    <div>
-                        <a href="portfolio.html">Portfolio*</a>
-                    </div>
-
-                    <div>
-                        <a href="kontakt.html">Kontakt</a>
-                    </div>
-
-                    <div>
-                        <a href="LoremIpsum.html">Lorem Ipsum</a>
-                    </div>
-                </div>
-            </div>
-        </header>
+      <div class="animals"></div>
 
     <div class="myDiv">
-        <h2>Mitt Portfolio</h2>
+      <h2>Mitt Portfolio</h2>
     </div>
-        <a href="https://github.com/EliasLovdinger" target="blank">Github Repository</a>
 
-        <div class="myFlexContainer2">
-            <div>
-                <h3>Lista med några utav mina gjorda uppgifter</h3>
-                            
-                <div class="wrapper">
-                    <ul>
-                        <li>
-                            <p>
-                                Bank projekt individuellt
-                                <a href="#modal1">Show more</a>
-                            </p>
-                        </li> 
-                        <li>
-                            <p>
-                                Bank projekt i grupp
-                                <a href="#modal2">Show more</a>
-                            </p>
-                        </li>
-                    </ul>
-                    
-                </div>
-                
-                <div class="imgFrame">
-                    <img src="Portfölj.jpg" alt="En bild på en Portfölj" class="responsive" width="400" height="200">
-                    <img src="Kaffebönor.jpg" alt="En bild på en Kaffebönor" class="responsive" width="400" height="200">
-                </div>
-                
-            </div>
+    <div class="myFlexContainer2">
+      <div class="aboutme">
+        <h3>Lista med några utav mina gjorda uppgifter</h3>
+        <hr />
+        <div class="wrapper">
+          <ul>
+            <li>
+              <p>
+                Bank projekt individuellt
+                <a href="#modal1">Show more</a>
+              </p>
+            </li>
+            <li>
+              <p>
+                Bank projekt i grupp
+                <a href="#modal2">Show more</a>
+              </p>
+            </li>
+          </ul>
         </div>
 
-        <div id="modal1" class="modal">
-            <div class="modal_content">
-                <h3>Bank projekt individuellt</h3>
-        
-                <p>
-                    <a href="https://github.com/EliasLovdinger/Individuellt-projekt-Bank" target="blank">Github Individuellt bank projekt</a>
-                </p>
-                <a href="#" class="modal_close">&times;</a>
-            </div>
+        <div class="imgFrame">
+          <img
+            src="/images/Portfölj.jpg"
+            alt="En bild på en Portfölj"
+            class="responsive"
+            width="400"
+            height="200"
+          />
+          <img
+            src="images/Kaffebönor.jpg"
+            alt="En bild på en Kaffebönor"
+            class="responsive"
+            width="400"
+            height="200"
+          />
         </div>
-        <div id="modal2" class="modal">
-            <div class="modal_content">
-                <h3>Bank projekt i grupp</h3>
-                <p>
-                    <a href="https://github.com/Ejpatolitej/KoalaBankApp" target="blank">Github grupp bank projekt</a>
-                </p>
-                <a href="#" class="modal_close">&times;</a>
-            </div>
-        </div>
-</body>
+      </div>
+    </div>
+
+    <div id="modal1" class="modal">
+      <div class="modal_content">
+        <h3>Bank projekt individuellt</h3>
+
+        <p>
+          <a
+            href="https://github.com/EliasLovdinger/Individuellt-projekt-Bank"
+            target="blank"
+            >Github Individuellt bank projekt</a
+          >
+        </p>
+        <a href="#" class="modal_close">&times;</a>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <div class="modal_content">
+        <h3>Bank projekt i grupp</h3>
+        <p>
+          <a href="https://github.com/Ejpatolitej/KoalaBankApp" target="blank"
+            >Github grupp bank projekt</a
+          >
+        </p>
+        <a href="#" class="modal_close">&times;</a>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="/scripts/main.js"></script>
+
+  </body>
 </html>
