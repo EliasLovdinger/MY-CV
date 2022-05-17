@@ -68,7 +68,10 @@ body{
 
 .myDiv {
   padding-top: 8rem;
-  margin-left: 25rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 2rem;
   }
 
   .aboutme{
@@ -178,6 +181,9 @@ body{
     max-width: 90%;
     background: #fff;
     padding: 1em 2em;
+    max-height: 90%;
+    height: 100px;
+    font-size: 2rem;
   }
   
   .modal_close {
@@ -205,11 +211,12 @@ body{
     align-items: center;
     justify-content: center;
     display: flex;
+    max-width: 100%;
   }
 
   table th ,td{
-    border: 2px solid rgb(0, 0, 0);
-    padding: .4rem;
+    border: 1px solid rgb(0, 0, 0);
+    padding: .2rem;
 }
 
 
@@ -257,5 +264,9 @@ body{
     }
     .header .nav-toggle{
         top: 5.8rem;
+    }
+    .form{
+      width: 100%;
+      height: auto;
     }
 }
